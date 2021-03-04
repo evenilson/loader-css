@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #000;
+
+}
+
+.loader {
+    height: 4rem;
+    width: 15rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loader div{
+    background: #FF1493;
+    height: 3rem;
+    width: 3rem;
+
+    border-radius: 50%;
+
+    animation: loader .7s infinite linear;
+}
+
+.loader > div:nth-child(2){
+    animation: loader .7s infinite reverse linear;
+}
+  
+@keyframes loader{
+    from {
+        transform: scale(1.2);
+        opacity: 1
+    }
+    to{
+        transform: scale(.8);
+        opacity: .2
+    }
+}
+  
+  
